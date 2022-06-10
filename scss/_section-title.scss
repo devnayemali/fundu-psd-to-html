@@ -1,0 +1,55 @@
+/*----------------------------------------*/
+/*  05. Variables CSS
+/*----------------------------------------*/
+
+.section-title {
+
+    h6{
+        color: $theme-color;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 50px;
+        color: $dark;
+        line-height: 1.2;
+        letter-spacing: -3px;
+        margin-top: 17px;
+    }
+    .section-bg {
+        h1{
+            text-transform: uppercase;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            font-size: 120px;
+            color: rgba(18, 17, 33, 0.059);
+        }
+    }
+}
+
+.section-title-big {
+    h6{
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 70px;
+        line-height: 1.14;
+    }
+    .section-bg {
+        h1{
+            font-size: 250px;
+            letter-spacing: -3px;
+            top: -118px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.section-title-white{
+    h2{
+        color:$white;
+    }
+}

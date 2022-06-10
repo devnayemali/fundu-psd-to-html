@@ -1,0 +1,1054 @@
+/*----------------------------------------*/
+/*  01. Variables CSS
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*  02. Mixins CSS
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*  03. Common CSS
+/*----------------------------------------*/
+/* 1. Theme default css */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+body, html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #899399;
+  font-size: 16px;
+}
+
+.img, img {
+  transition: all 0.3s ease-out 0s;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+a, .f-btn, button, span, p, input, select, textarea, li, img, ::after, ::before, .transition-3, h1, h2, h3, h4, h5, h6 {
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ec6e39;
+}
+
+a,
+button {
+  color: inherit;
+  outline: medium none;
+  text-decoration: none;
+}
+
+button:focus, input:focus, input:focus, textarea, textarea:focus {
+  outline: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: #121121;
+  margin-top: 0px;
+  font-weight: 600;
+  text-transform: normal;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  color: #686893;
+  margin-bottom: 15px;
+}
+
+input, select {
+  transition: .3s;
+}
+
+label {
+  color: #7e7e7e;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+::selection {
+  background: #222;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.img-100 img {
+  width: 100%;
+}
+
+.bg-css {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/*--
+    - Input Placeholder
+-----------------------------------------*/
+
+*::placeholder {
+  color: #86859b;
+  font-size: 14px;
+  opacity: 1;
+}
+
+/*--
+    - Common Classes
+-----------------------------------------*/
+.fix {
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+.sticky {
+  left: 0;
+  margin: auto;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
+  z-index: 999;
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  background: #121121;
+}
+
+/*--
+    - Background color
+-----------------------------------------*/
+.grey-bg {
+  background: #f9f9f9;
+}
+
+.white-bg {
+  background: #ffffff;
+}
+
+.black-bg {
+  background: #121121;
+}
+
+.theme-bg {
+  background: #ec6e39;
+}
+
+.white-light-bg {
+  background: #e8e8e8;
+}
+
+.s-gray-bg {
+  background: #8d8db4;
+}
+
+.slight-bg {
+  background: #f9f8ff;
+}
+
+/*--
+    - color
+-----------------------------------------*/
+.white-color {
+  color: #ffffff;
+}
+
+.black-color {
+  color: #222;
+}
+
+.theme-color {
+  color: #ec6e39;
+}
+
+.f-btn {
+  background: #ec6e39;
+  color: #ffffff;
+  font-weight: 700;
+  display: inline-block;
+  padding: 18px 40px;
+  line-height: 1;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  letter-spacing: 2px;
+}
+
+.f-btn:hover {
+  background: #121121;
+  color: #ffffff;
+}
+
+.f-lg-btn {
+  padding: 20px 60px;
+  font-size: 14px;
+}
+
+.f-xl-btn {
+  padding: 22px 100px;
+}
+
+.f-t-btn {
+  background-color: transparent;
+  border: 2px solid #e8e8e8;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  max-width: 1130px;
+}
+
+/*----------------------------------------*/
+/*  04. Header CSS
+/*----------------------------------------*/
+.transparent-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: transparent;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-sticky.sticky .menu-area {
+  border: none;
+}
+
+.header-sticky.sticky .menu-area .menu > li > a {
+  padding: 40px 0;
+}
+
+.header-sticky.sticky .header-btn {
+  margin-top: 12px;
+}
+
+.header-info {
+  padding: 26px 0;
+}
+
+.header-info-item {
+  margin-right: 40px;
+}
+
+.header-info-item span {
+  color: #99a39f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.header-info-item span i {
+  background: #ec6e39;
+  padding: 1px 2px;
+  font-size: 14px;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.header-info-item h5 {
+  font-family: "Merriweather", serif;
+  color: #ffffff;
+  margin-top: 8px;
+}
+
+.user-login a {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #cbd6e3;
+}
+
+.user-login a i {
+  margin-right: 11px;
+}
+
+.menu-area {
+  padding: 0px 35px;
+  border: 2px solid #777780;
+}
+
+.menu {
+  margin-right: 45px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 50px;
+  position: relative;
+}
+
+.menu li:last-child {
+  margin-right: 0px;
+}
+
+.menu li a {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  display: block;
+  padding: 30px 0;
+}
+
+.menu li .sub-menu {
+  opacity: 0;
+  visibility: hidden;
+  top: 100%;
+  border-top: 4px solid #ec6e39;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 250px;
+  padding: 20px;
+  top: 100%;
+  left: 0;
+}
+
+.menu li .sub-menu li {
+  display: block;
+  padding: 0px 5px;
+  margin-right: 0px;
+  margin-bottom: 13px;
+}
+
+.menu li .sub-menu li a {
+  padding: 0;
+  color: #222;
+}
+
+.menu li .sub-menu li:hover > a {
+  color: #ec6e39;
+}
+
+.menu li .sub-menu .sub-menu {
+  top: 0;
+  left: 100%;
+}
+
+.menu li:hover > a {
+  color: #ec6e39;
+}
+
+.menu li:hover > .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-btn {
+  margin-top: 13px;
+}
+
+/*----------------------------------------*/
+/*  05. Slider CSS
+/*----------------------------------------*/
+.slider {
+  z-index: 1;
+}
+
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #040415;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.slider .home-arow {
+  position: absolute;
+  bottom: 33px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 30px;
+  color: #eef0ff;
+}
+
+.slider .home-arow a i {
+  animation: updown 1s infinite alternate;
+}
+
+.slider-active .slider-height {
+  height: 1020px;
+}
+
+.slider-content h1 {
+  font-size: 80px;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: -3px;
+  font-family: "Merriweather", serif;
+  font-weight: 800;
+}
+
+.slider-play-btn a {
+  width: 80px;
+  height: 80px;
+  background: #ec6e39;
+  display: inline-block;
+  line-height: 80px;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.slider-play-btn a i {
+  font-size: 25px;
+  line-height: 80px;
+}
+
+.slider-bg-text h1 {
+  position: absolute;
+  top: 0%;
+  font-size: 235px;
+  left: -69px;
+  color: rgba(255, 255, 255, 0.102);
+  z-index: -1;
+}
+
+/*----------------------------------------*/
+/*  05. Variables CSS
+/*----------------------------------------*/
+.section-title h6 {
+  color: #ec6e39;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-title h2 {
+  font-size: 50px;
+  color: #121121;
+  line-height: 1.2;
+  letter-spacing: -3px;
+  margin-top: 17px;
+}
+
+.section-title .section-bg h1 {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 120px;
+  color: rgba(18, 17, 33, 0.059);
+}
+
+.section-title-big h6 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-title-big h2 {
+  font-size: 70px;
+  line-height: 1.14;
+}
+
+.section-title-big .section-bg h1 {
+  font-size: 250px;
+  letter-spacing: -3px;
+  top: -118px;
+  text-transform: capitalize;
+}
+
+.section-title-white h2 {
+  color: #ffffff;
+}
+
+/*----------------------------------------*/
+/*  06. Testimonial and FAQ CSS
+/*----------------------------------------*/
+.testimonial-item-area {
+  margin-top: 50px;
+}
+
+.testimonial-item-content {
+  border: 2px solid #e5e5e5;
+  padding: 35px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.testimonial-item-content::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 70px;
+  box-sizing: border-box;
+  border-color: transparent #ffffff #ffffff transparent;
+  border-style: solid;
+  border-width: 10px;
+  transform: rotate(40deg);
+  box-shadow: 2px 2px 2px -1px #aeaeae;
+}
+
+.testimonial-item-content p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.testimonial-item-content .t-rate-icon {
+  margin-bottom: 20px;
+}
+
+.testimonial-item-content .t-rate-icon a {
+  color: #ffae00;
+  margin: 0 2px;
+}
+
+.testimonial-item .testi-author {
+  margin-left: 53px;
+  margin-top: 35px;
+}
+
+.testimonial-item .testi-author .testi-author-img {
+  margin-right: 15px;
+}
+
+.testimonial-item .testi-author h5 {
+  line-height: 1;
+}
+
+.testimonial-item .testi-author span {
+  font-size: 12px;
+  color: #ec6e39;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.faq-item-area {
+  margin-top: 50px;
+}
+
+.faq-item-area .accordion-item {
+  border: 2px solid #e5e5e5;
+  margin-bottom: 24px;
+}
+
+.faq-item-area .accordion-button {
+  font-family: "Open Sans", sans-serif;
+  color: #686893;
+  font-size: 20px;
+}
+
+.faq-item-area .accordion-button:hover {
+  color: #121121;
+}
+
+.faq-item-area .accordion-body {
+  padding: 0 20px;
+}
+
+.faq-item-area .accordion-button:not(.collapsed) {
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+.faq-item-area .accordion-button:focus {
+  box-shadow: none;
+}
+
+.faq-item-area .accordion-button:not(.collapsed)::after {
+  background-image: none;
+  transform: rotate(0);
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  content: "-";
+  background-image: none;
+  font-size: 28px;
+  color: #ec6e39;
+  position: absolute;
+  top: 12px;
+  right: 28px;
+}
+
+.faq-item-area .accordion-button::after {
+  content: "+";
+  background-image: none;
+  transform: rotate(0);
+  font-size: 28px;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+/*----------------------------------------*/
+/*  07. Event CSS
+/*----------------------------------------*/
+.event-area {
+  background: #f2edff;
+}
+
+.s-e-p {
+  padding: 62px 52px;
+}
+
+.single-event {
+  background: #ffffff;
+}
+
+.single-event h2 {
+  font-size: 32px;
+  line-height: 1.3;
+  letter-spacing: -2px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.single-event .single-event-btn {
+  top: 40px;
+  left: 40px;
+}
+
+.event-item-date {
+  top: 30px;
+  right: 30px;
+  background: #ec6e39;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  padding-top: 17px;
+  border-radius: 50%;
+}
+
+.event-item-date span {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+}
+
+.event-item-content {
+  background: #ffffff;
+  padding: 40px 24px;
+}
+
+.event-item-content h4 {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+
+.event-item-content h4:hover {
+  color: #ec6e39;
+}
+
+.event-item-content p {
+  margin-bottom: 0px;
+}
+
+/*----------------------------------------*/
+/*  08. Event CSS
+/*----------------------------------------*/
+.team-mem-item {
+  border: 2px solid #e5e5e5;
+  padding: 20px;
+  text-align: center;
+}
+
+.team-mem-item .team-img {
+  overflow: hidden;
+}
+
+.team-mem-item:hover img {
+  transform: scale(1.03);
+}
+
+.team-mem-content {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.team-mem-content h4 {
+  font-size: 20px;
+}
+
+.team-mem-content h6 {
+  color: #ec6e39;
+  font-size: 12px;
+}
+
+.team-link {
+  margin-top: 20px;
+}
+
+.team-link li {
+  display: inline-block;
+  margin: 0 7px;
+}
+
+.team-link li a {
+  display: block;
+  font-size: 15px;
+  color: #bab9d4;
+}
+
+.team-link li:hover a {
+  color: #ec6e39;
+}
+
+/*----------------------------------------*/
+/*  09. Join Us CSS
+/*----------------------------------------*/
+.join-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.join-overlay::after {
+  content: "";
+  position: absolute;
+  background: #121121;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  mix-blend-mode: hard-light;
+}
+
+.join-form-area label {
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.join-form-area label span {
+  color: #ec6e39;
+}
+
+.join-form-area input, .join-form-area select {
+  display: block;
+  height: 68px;
+  width: 100%;
+  background: none;
+  padding: 0 30px;
+  border: 2px solid #2f2c37;
+  color: #fff;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  outline: 0;
+}
+
+.join-form-area input:focus, .join-form-area select:focus {
+  border: 2px solid #ec6e39 !important;
+}
+
+.join-form-area option {
+  background: #ffffff;
+  color: #121121;
+}
+
+.join-form-area .join-btn:hover a {
+  background: #ffffff;
+  color: #222;
+}
+
+/*----------------------------------------*/
+/*  10. Join Us CSS
+/*----------------------------------------*/
+.up-event-area {
+  background: #f2edff;
+}
+
+.up-event-item {
+  background: #ffffff;
+  padding: 50px;
+  margin-bottom: 15px;
+}
+
+.up-event-item .up-evnet-date {
+  height: 160px;
+  width: 160px;
+  background: #ec6e39;
+  margin-right: 45px;
+}
+
+.up-event-item .up-evnet-date:hover {
+  background-color: #121121;
+}
+
+.up-event-item .up-evnet-date h2 {
+  font-size: 60px;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 40px;
+  line-height: 1;
+}
+
+.up-event-item .up-evnet-date span {
+  font-size: 14px;
+  color: #ffffff;
+  display: block;
+  text-transform: uppercase;
+}
+
+.up-event-item .up-event-item-content span {
+  font-size: 16px;
+  color: #8d8db4;
+  display: block;
+  margin-top: 7px;
+}
+
+.up-event-item .up-event-item-content h2 {
+  margin: 10px 0;
+}
+
+.up-event-btn a {
+  color: #8d8db4;
+}
+
+/*----------------------------------------*/
+/*  11. Counter CSS
+/*----------------------------------------*/
+.counter-area {
+  background: #121121;
+}
+
+.counter-item h2 {
+  font-size: 70px;
+  color: #ffffff;
+  position: relative;
+  margin-top: 15px;
+  line-height: 1;
+}
+
+.counter-item h2 .c-c {
+  font-size: 30px;
+  color: #ec6e39;
+  position: absolute;
+  bottom: 6px;
+}
+
+.counter-item .c-text {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #8d8db4;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/*----------------------------------------*/
+/*  12. Counter CSS
+/*----------------------------------------*/
+.news-area {
+  background: #f2edff;
+}
+
+.news-item {
+  background-color: #ffffff;
+}
+
+.news-item .news-content {
+  padding: 37px 40px;
+}
+
+.news-item .news-content h2 {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  margin: 15px 0;
+}
+
+.news-item .news-content p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.news-item .read-more a {
+  color: #ec6e39;
+}
+
+/*----------------------------------------*/
+/*  13. Counter CSS
+/*----------------------------------------*/
+.footer-area {
+  background-color: #121121;
+}
+
+.footer-widget .footer__widget-title {
+  margin-bottom: 30px;
+}
+
+.footer-widget .footer__widget-title h3 {
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.footer-widget .footer__widget-content p {
+  color: #8d8db4;
+}
+
+.footer-widget .footer__widget-content .c-p-date {
+  color: #ec6e39;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-widget .footer__widget-content .recent-post p {
+  font-size: 18px;
+  color: #8d8db4;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.footer-widget .footer__widget-content .recent-post p:hover a {
+  color: #ffffff;
+}
+
+.footer-widget .footer-link li {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer-widget .footer-link li a {
+  color: #8d8db4;
+}
+
+.footer-widget .footer-link li:hover a {
+  color: #ffffff;
+}
+
+.copy-text p {
+  color: #8d8db4;
+}
+
+.copy-text p a {
+  color: #ec6e39;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.back-to-top a {
+  text-transform: uppercase;
+  color: #ec6e39;
+  font-weight: 600;
+  letter-spacing: 2px;
+}

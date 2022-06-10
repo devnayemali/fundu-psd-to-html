@@ -1,0 +1,25 @@
+/*----------------------------------------*/
+/*  12. Counter CSS
+/*----------------------------------------*/
+.news-area{
+    background: $event-bg;
+}
+.news-item{
+    background-color: $white;
+    .news-content{
+        padding: 37px 40px;
+        h2{
+            font-size: 20px;
+            line-height: 1.5;
+            letter-spacing: -1px;
+            margin: 15px 0;
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.8;
+        }
+    }
+    .read-more a {
+        color: $theme-color;
+    }
+}

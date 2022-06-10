@@ -1,0 +1,44 @@
+/*----------------------------------------*/
+/*  08. Event CSS
+/*----------------------------------------*/
+.team-mem-item {
+    border: 2px solid $gray-border;
+    padding: 20px;
+    text-align: center;
+    .team-img{
+        overflow: hidden;
+    }
+    &:hover{
+        img{
+            transform: scale(1.03);
+        }
+    }
+}
+.team-mem-content {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    h4 {
+        font-size: 20px;
+    }
+    h6 {
+        color: $theme-color;
+        font-size:12px;
+    }
+}
+.team-link{
+    margin-top: 20px;
+    li{
+        display: inline-block;
+        margin: 0 7px;
+        a {
+            display: block;
+            font-size: 15px;
+            color: #bab9d4;
+        }
+        &:hover{
+            a{
+                color: $theme-color;
+            }
+        }
+    } 
+}

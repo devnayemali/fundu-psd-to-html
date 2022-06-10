@@ -1,0 +1,71 @@
+/*----------------------------------------*/
+/*  13. Counter CSS
+/*----------------------------------------*/
+.footer-area{
+    background-color: $dark;
+}
+.footer-widget {
+    .footer__widget-title {
+        margin-bottom: 30px;
+        h3{
+            font-size: 30px;
+            color: $white;
+            text-transform: capitalize;
+        }
+    }
+    .footer__widget-content {
+        p{
+            color: $s-gray;
+        }
+        .c-p-date{
+            color: $theme-color;
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .recent-post{
+            p{
+                font-size: 18px;
+                color: $s-gray;
+                font-weight: 600;
+                margin-top: 5px;
+                &:hover a{
+                    color: $white;
+                }
+            }
+            
+        }
+    }
+    .footer-link{
+        li{
+            display: block;
+            margin-bottom: 15px;
+            a{
+                color: $s-gray;
+            }
+            &:hover a{
+                color: $white;
+            }
+
+        }
+    }
+}
+.copy-text {
+    p{
+        color: $s-gray;
+        a{
+            color: $theme-color;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
+.back-to-top{
+    a{
+        text-transform: uppercase;
+        color: $theme-color;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+}

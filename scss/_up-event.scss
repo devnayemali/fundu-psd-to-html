@@ -1,0 +1,50 @@
+/*----------------------------------------*/
+/*  10. Join Us CSS
+/*----------------------------------------*/
+.up-event-area{
+    background: $event-bg;
+}
+.up-event-item{
+    background: $white;
+    padding: 50px;
+    margin-bottom: 15px;
+    .up-evnet-date {
+        height: 160px;
+        width: 160px;
+        background: $theme-color;
+        margin-right: 45px;
+        &:hover{
+            background-color: $dark;
+        }
+        h2{
+            font-size: 60px;
+            color: $white;
+            margin: 0;
+            padding-top: 40px;
+            line-height: 1;
+        }
+        span{
+            font-size: 14px;
+            color: $white;
+            display: block;
+            text-transform: uppercase;
+
+        }
+    }
+    .up-event-item-content{
+        span{
+            font-size: 16px;
+            color: $s-gray;
+            display: block;
+            margin-top: 7px;
+        }
+        h2{
+            margin: 10px 0;
+        }
+    }
+}
+.up-event-btn{
+    a{
+        color: $s-gray;
+    }
+}

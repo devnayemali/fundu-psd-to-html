@@ -1,0 +1,57 @@
+/*----------------------------------------*/
+/*  09. Join Us CSS
+/*----------------------------------------*/
+.join-overlay{
+    position: relative;
+    z-index: 1;
+    &::after{
+        content: "";
+        position: absolute;
+        background: #121121;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+        mix-blend-mode: hard-light;
+    }
+}
+.join-form-area{
+    label{
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        span{
+            color: $theme-color;
+        }
+    }
+
+    input , select{
+        display: block;
+        height: 68px;
+        width: 100%;
+        background: none;
+        padding: 0 30px;
+        border: 2px solid $input-border-color;
+        color: #fff;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+        outline: 0;
+        &:focus{
+            border: 2px solid $theme-color !important;
+        }
+    }
+    option{
+        background: $white;
+        color: $dark;
+    }
+    .join-btn{
+        &:hover{
+            a{
+                background: $white;
+                color: $black;
+            }
+        }
+    }
+}

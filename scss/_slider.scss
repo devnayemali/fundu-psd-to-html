@@ -1,0 +1,77 @@
+/*----------------------------------------*/
+/*  05. Slider CSS
+/*----------------------------------------*/
+.slider{
+    z-index: 1;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(4, 4, 21);
+        opacity: 0.6;
+        z-index: -1;
+    } 
+    .home-arow{
+        position: absolute;
+        bottom: 33px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 30px;
+        color: $grey-color;
+        a {
+            i{
+                animation: updown 1s infinite alternate;
+            }
+        }
+
+    } 
+}
+
+.slider-active {
+    .slider-height {
+        height: 1020px;
+    }
+
+
+}
+.slider-content {
+	h1 {
+        font-size: 80px;
+        color: $white;
+        line-height: 1.2;
+        letter-spacing: -3px;
+        font-family: $merri;
+        font-weight: 800;
+    }
+}
+.slider-play-btn {
+    a{
+        width: 80px;
+        height: 80px;
+        background: $theme-color;
+        display: inline-block;
+        line-height: 80px;
+        border-radius: 50%;
+        color: $white;
+        i {
+            font-size: 25px;
+            line-height: 80px;
+        }
+
+    }
+}
+
+.slider-bg-text{
+    h1{
+        position: absolute;
+        top: 0%;
+        font-size: 235px;
+        left: -69px;
+        color: rgba(255, 255, 255, 0.102);
+        z-index: -1;
+    }
+}

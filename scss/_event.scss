@@ -1,0 +1,58 @@
+/*----------------------------------------*/
+/*  07. Event CSS
+/*----------------------------------------*/
+.event-area{
+    background: $event-bg;
+}
+.s-e-p{
+    padding: 62px 52px;
+}
+.single-event {
+    background: $white;
+    h2 {
+        font-size: 32px;
+        line-height: 1.3;
+        letter-spacing: -2px;
+        margin-top: 16px;
+        margin-bottom: 20px;
+    }
+
+    .single-event-btn{
+        top: 40px;
+        left: 40px;
+    }
+}
+
+.event-item-date{
+    top: 30px;
+    right: 30px;
+    background: $theme-color;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    padding-top: 17px;
+    border-radius: 50%;
+    span{
+        color: $white;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: block;
+    }
+}
+.event-item-content {
+    background: $white;
+    padding: 40px 24px;
+    h4 {
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: -1px;
+        margin-bottom: 18px;
+        &:hover{
+            color: $theme-color;
+        }
+    }
+    p{
+        margin-bottom: 0px;
+    }
+}

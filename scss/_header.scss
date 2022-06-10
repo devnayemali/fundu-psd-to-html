@@ -1,0 +1,138 @@
+/*----------------------------------------*/
+/*  04. Header CSS
+/*----------------------------------------*/
+.transparent-header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	background: transparent;
+	right: 0;
+	width: 100%;
+    z-index: 100;
+}
+.header-sticky.sticky{
+    .menu-area {
+        border: none;
+        .menu > li > a {
+            padding: 40px 0;
+        }
+    }
+    .header-btn {
+        margin-top: 12px;
+    }
+}
+.header-info {
+	padding: 26px 0;
+}
+.header-info-item {
+	margin-right: 40px;
+}
+.header-info-item{
+    span {
+        color: #99a39f;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
+        font-weight: 700;
+        i{
+            background: $theme-color;
+            padding: 1px 2px;
+            font-size: 14px;
+            border-radius: 2px;
+            margin-right: 10px;
+        }
+    }
+    h5{
+        font-family: $merri;
+        color: $white;
+        margin-top: 8px;
+    }
+}
+.user-login {
+    a {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 12px;
+        letter-spacing: 1px;
+        color: #cbd6e3;
+        i {
+            margin-right: 11px;
+        }
+    }
+
+}
+.menu-area{
+    padding: 0px 35px;
+    border: 2px solid $menu-border;
+}
+
+.menu {
+    margin-right: 45px;
+    li{
+        display: inline-block;
+        margin-right: 50px;
+        position: relative;
+        &:last-child{
+            margin-right: 0px;
+        }
+        a {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 12px;
+            color: #ffffff;
+            letter-spacing: 1px;
+            display: block;
+            padding: 30px 0;
+
+        }
+        .sub-menu{
+            opacity: 0;
+            visibility: hidden;
+            top: 100%;
+            border-top: 4px solid $theme-color;
+            position: absolute;
+            background-color: $white;
+            min-width: 250px;
+            padding: 20px;
+            top: 100%;
+            left: 0;
+            li{
+                display: block;
+                padding: 0px 5px;
+                margin-right: 0px;
+                margin-bottom: 13px;
+                a{
+                    padding: 0;
+                    color: $black;
+                }
+
+                &:hover > {
+                    a{
+                        color: $theme-color;
+                    }
+                }
+            }
+            .sub-menu{
+                top: 0;
+                left: 100%;
+            }
+
+        }
+
+        &:hover > {
+
+            & a{
+                color: $theme-color
+            }
+            & .sub-menu{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.header-btn{
+	margin-top: 13px;
+}
